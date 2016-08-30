@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>REDUX + JS + jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/redux/3.5.2/redux.min.js"></script>
+    <style>
+        div#decrement,
+        div#increment {
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            background: green;
+        }
+        
+        div#increment {
+            background: blue;
+        }
+        
+        .align {
+            display: inline-flex;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Value: <span id="value">0</span></p>
+    <div class="align">
+        <div id="decrement">-</div>
+        <div id="increment">+</div>
+    </div>
+    <script src="./redux.js" type="text/javascript"></script>
+</body>
+
+</html>
