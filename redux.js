@@ -5,17 +5,17 @@ const DEFAULT_STATE = { count: 0 };
 const store = Redux.createStore(counter)
 
 //DISPATCH DECREMNET
-//document.getElementById('decrement'). // vanilla JS
-$('#decrement').
-	on('click', () => {
+//document.getElementById('decrement').addEventListener // vanilla JS
+$('#decrement').on
+	('click', () => {
 		const action = { type: 'DECREMENT' };
 		store.dispatch(action);
 	});
 
 //DISPATCH INCREMENT
-//document.getElementById('increment'). // vanilla JS
-$('#increment').
-	on('click', () => {
+//document.getElementById('increment').addEventListener // vanilla JS
+$('#increment').on
+	('click', () => {
 		const action = { type: 'INCREMENT' };
 		store.dispatch(action);
 	});
